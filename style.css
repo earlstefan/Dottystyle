@@ -1,0 +1,318 @@
+html {
+  scroll-behavior: smooth !important;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #333333;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+li {
+  list-style: none;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  justify-content: space-evenly;
+  height: 70px;
+  background-color: #333333;
+  z-index: 10;
+}
+
+.nav-link-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+li > .play-btn,
+li > .play-btn:link,
+li > .play-btn:visited {
+  background-color: #282828;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  color: #fff;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 5px;
+  cursor: pointer;
+  border: 0;
+  margin-right: 1.6rem;
+}
+
+li > .play-btn:hover,
+li > .play-btn:active {
+  background-color: rgb(29, 29, 29);
+}
+
+.download-btn {
+  background-color: #282828;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: #fff;
+  height: 40px;
+  width: 200px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  border: 0;
+}
+
+.download-btn:hover,
+.download-btn:active {
+  background-color: rgb(29, 29, 29);
+}
+
+.line {
+  border: 1px solid #484848;
+  height: 5vh;
+}
+
+.play-container {
+  background: url("/assets/imgs/GradientFill1.png") bottom no-repeat,
+    url("/assets/imgs/Boat.png") top no-repeat;
+  background-attachment: scroll;
+  background-size: contain, cover;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.play-image {
+  top: 30%;
+  left: 10%;
+  position: absolute;
+}
+
+.audience-solution-container {
+  background-image: url("/assets/imgs/Rectangle2.png");
+  background-attachment: scroll;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200vh;
+  width: 100%;
+}
+
+.audience-container {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+
+.audience-image-container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.audience-image {
+  padding: 20%;
+}
+
+.audience-text {
+  width: 25%;
+}
+
+.audience-text > div > span {
+  display: block;
+  font-size: 48px;
+}
+
+.solution-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.solution-container > div > span {
+  display: flex;
+  justify-content: center;
+  font-size: 48px;
+}
+
+.solution-container > div > div {
+  display: flex;
+}
+
+.solution-text-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 90%;
+  padding: 0 2% 0 20%;
+}
+
+.solution-span {
+  display: block;
+  font-size: 24px;
+}
+
+.solution-text-2 {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  padding: 0 20% 0 2%;
+}
+
+.results-container {
+  background-image: url("/assets/imgs/Rectangle2.png");
+  background-attachment: scroll;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.results-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+.results-list > li {
+  margin: 1rem;
+}
+
+.results-list > li > button {
+  background-color: #0a3a4d;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: #fff;
+  height: 40px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  border: 0;
+}
+
+.results-list > li > button:hover {
+  background-color: #072733;
+}
+
+.results-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.active {
+  background-color: #132a33 !important;
+}
+
+.video-text {
+  display: none;
+}
+
+.photography-text {
+  display: none;
+}
+
+.social-text {
+  display: none;
+}
+
+.pr-text {
+  display: none;
+}
+
+.radio-text {
+  display: none;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 2rem;
+  text-align: center;
+  color: black;
+  font-family: sans-serif;
+  background-color: grey;
+  transition: 0.3s;
+}
+
+.scrolled {
+  background-color: dodgerblue;
+  transition: 0.3s;
+}
+
+.dot-container {
+  display: flex;
+  height: 100px;
+  width: 23%;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.dot-container-2 {
+  display: flex;
+  height: 100px;
+  width: 4%;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.dot-container-3 {
+  display: flex;
+  height: 100px;
+  width: 2.5%;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot-active {
+  background-color: white;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
